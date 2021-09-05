@@ -1,5 +1,6 @@
+****  BIENVENIDOS  ****
 Despues de clonar el repositorio
-crear una base de datos mysl con el nombre second
+crear una base de datos mysql con el nombre " second "
 
 luego migrar los datos con el comando:
     php artisan migrate
