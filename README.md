@@ -8,7 +8,7 @@ luego migrar los datos con el comando: <br>
 y por ultimo cargar los registros con los comandos <br>
     php artisan migrate:fresh --seed <br>
 <br>
-YA HAY UN USARIO QUE LISTO PARA USAR COM MUESTRA Y ES EL SIGUIENTE: <br>
+YA HAY UN USARIO QUE ESTÁ LISTO PARA USAR Y ES EL SIGUIENTE: <br>
 <br>
     usuario:user@gmail.com <br>
     contraseña:123456789 <br>
