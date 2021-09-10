@@ -15,6 +15,7 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 })->name('dashboard');
 
 Route::get('tienda',[TiendaController::class,'index'])->name('tienda');
+Route::get('tienda/{id}',[TiendaController::class,'show'])->name('tienda.show');
 
 // Route::get('registrarse', RegisterController::class);
 

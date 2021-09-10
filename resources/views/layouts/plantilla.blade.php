@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link rel="stylesheet" href="{{ asset('css/style.css'); }}">
-    {{-- <link rel="stylesheet" href="{{ asset('css/app.css'); }}"> --}}
+    <link rel="stylesheet" href="{{ asset('css/app.css'); }}">
     <title>@yield('titlePage')</title>
 </head>
 <body>
@@ -39,14 +39,12 @@
     
     <nav class="my-nav">
         <div class="container py-1 nav me-auto">
-            <a href="{{ Route('tienda')}}" class="nav-link">Hogar</a>
-            <a href="{{ Route('tienda')}}" class="nav-link">Electrodomesticos</a>
-            <a href="{{ Route('tienda')}}" class="nav-link">Electronica</a>
-            <a href="{{ Route('tienda')}}" class="nav-link">Gadgets</a>
-            <a href="{{ Route('tienda')}}" class="nav-link">Clulares</a>
-            <a href="{{ Route('tienda')}}" class="nav-link">Computadoras</a>
-            <a href="{{ Route('tienda')}}" class="nav-link">Ropa</a>
-            <a href="{{ Route('tienda')}}" class="nav-link">Libros</a>
+            {{-- @foreach ($categories as $category) --}}
+                {{-- <a href="#" class="nav-link text-capitalize">{{$category->nombre}}</a>     --}}
+                <a href="{{route('tienda')}}" class="nav-link text-capitalize">Moda</a>
+                <a href="{{route('tienda')}}" class="nav-link text-capitalize">Electrónica</a>                
+                <a href="{{route('tienda')}}" class="nav-link text-capitalize">Muebles para el Hogar</a>
+            {{-- @endforeach --}}
         </div>
     </nav> 
 

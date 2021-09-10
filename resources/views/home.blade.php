@@ -34,11 +34,10 @@
                 <div class="grid gap-1 clmn-4 clmn-md-2 clmn-sm-2 clmn-pk-1">
                     @foreach ($products as $product)
                     <div class="card m-1">
-                        <img class="card-img" src="{{$product->imagen}}" alt="Vans">
-                        <div class="card-img-overlay d-flex justify-content-end">
-                          <a href="#" class="card-link text-danger like">
-                            <i class="fas fa-heart"></i>
-                          </a>
+                        <div class="card-img ">
+                            <a href="{{ route('tienda.show',$id=$product->id) }}">
+                                <img class="" src="{{$product->imagen}}">
+                            </a>
                         </div>
                         <div class="card-body d-flex flex-column justify-content-between">
                           <h3 class="card-title">{{$product->nombre}}</h3>
