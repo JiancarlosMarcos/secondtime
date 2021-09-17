@@ -21,11 +21,11 @@ Route::get('tienda',[TiendaController::class,'index'])->name('tienda');
 
 Route::get('tienda/{id}',[TiendaController::class,'show'])->name('tienda.show');
 
-Route::get('checkout/{id}',[TiendaController::class,'checkoutShow'])->name('checkout.show');
+// Route::get('checkout/{id}',[TiendaController::class,'checkoutShow'])->name('checkout.show');
 
-Route::middleware(['auth:sanctum', 'verified'])->get('checkout', function () {
-    return view('tienda.checkout');
-})->name('checkout');
+Route::middleware(['auth:sanctum', 'verified'])
+    ->get('checkout/{id}',[TiendaController::class,'checkoutShow'])
+    ->name('checkout.show');
 
 //###############  Dashboard ###################
 

@@ -56,6 +56,9 @@
                     />
                 @endforeach
             </div>
+            <div class="flex justify-end pr-3">
+                <a href="{{route('tienda')}}">ver mas</a>
+            </div>
         </div>
     </div>
 
