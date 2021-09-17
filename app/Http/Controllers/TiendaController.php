@@ -17,4 +17,8 @@ class TiendaController extends Controller
         $producto = Product::find($id);
         return view('tienda.producto',compact('producto'));
     }
+    public function checkoutShow($id){
+        $producto = Product::find($id);
+        return view('tienda.checkout',compact('producto'));
+    }
 }

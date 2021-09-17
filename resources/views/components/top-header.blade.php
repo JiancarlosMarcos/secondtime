@@ -10,7 +10,7 @@
             <div class="col-span-12 md:col-span-12 lg:col-span-3 flex justify-center lg:justify-end">
                 @if (Route::has('login'))
                 @auth
-                    <a href="{{ url('/dashboard') }}" class="border transition duration-600 text-white hover:bg-white hover:text-gray-800 rounded-lg w-24 h-10 lg:h-full mx-2 flex items-center justify-center">Dashboard</a>
+                    <a href="{{ url('dashboard') }}" class="border transition duration-600 text-white hover:bg-white hover:text-gray-800 rounded-lg w-24 h-10 lg:h-full mx-2 flex items-center justify-center">Dashboard</a>
                 @else
                     <a href="{{ url('login') }}" class="border transition duration-600 text-white hover:bg-white hover:text-gray-800 rounded-lg w-24 h-10 lg:h-full mx-2 flex items-center justify-center">Login</a>
                     @if (Route::has('register'))

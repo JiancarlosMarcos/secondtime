@@ -14,7 +14,10 @@
                 <span class="text-xs text-gray-400"><s>s/{{$precioinicial}}</s></span>
                 <h5 class="text-green-800 text-lg">s/{{$preciofinal}}</h5>
             </div>
-            <a href="#" class="rounded-md p-2 mt-3 border border-yellow-500  text-yellow-500 hover:bg-yellow-500 hover:text-gray-900 duration-500">Comprar</a>
+            {{-- <x-btn-principal ruta="#">
+                Comprar
+            </x-btn-principal> --}}
+            <a href="{{route('checkout.show',$id)}}" class="rounded-md p-2 mt-3 border border-yellow-500  text-yellow-500 hover:bg-yellow-500 hover:text-gray-900 duration-500">Comprar</a>
         </div>
     </div>
 </div>

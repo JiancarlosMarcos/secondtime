@@ -9,7 +9,8 @@ use Illuminate\Support\Facades\Route;
 //###############  Home ###################
 
 Route::get('/',[HomeController::class,'index'])->name('home');
-Route::view('probando', 'probando');
+Route::view('user/profile', 'tienda/profile')->name('portafolio');
+
 
 //###############  Tienda ###################
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
@@ -19,6 +20,8 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 Route::get('tienda',[TiendaController::class,'index'])->name('tienda');
 
 Route::get('tienda/{id}',[TiendaController::class,'show'])->name('tienda.show');
+
+Route::get('checkout/{id}',[TiendaController::class,'checkoutShow'])->name('checkout.show');
 
 Route::middleware(['auth:sanctum', 'verified'])->get('checkout', function () {
     return view('tienda.checkout');
